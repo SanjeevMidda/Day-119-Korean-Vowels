@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter{
+    font-size: 100px;
+}
+
+.newLetter{
+    color: orangered;
+    border-radius: 50%;
+    padding: 15px;
+    border: 1px solid orangered;
+    margin-top: 100px;
+    transition: box-shadow 50ms;
+}
+
+.motion{
+    animation: motion 500ms;
+}
+
+@keyframes motion{
+    from{
+        color: black;
+    }
+    to{
+        color: blue;
+    }
+}
